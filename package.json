@@ -1,0 +1,27 @@
+{
+  "name": "fylo-landing-page-with-two-column-layout-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjdeepak/fylo-landing-page.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Bootstrap5"
+  ],
+  "author": "kjdeepak4work@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjdeepak/fylo-landing-page/issues"
+  },
+  "homepage": "https://github.com/kjdeepak/fylo-landing-page#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
