@@ -3,7 +3,7 @@ $secondary: hsl(224, 93%, 58%);
 $moderate-cyan: hsl(170, 45%, 43%);
 $desaturated-blue: hsl(238, 22%, 44%);
 $light-grayish-blue: hsl(240, 75%, 98%);
-$light-gray: hsl(0, 0%, 75%);
+$light:hsl(0, 0%, 75%);
 
 // Create your own map
 $custom-colors: (
@@ -12,7 +12,15 @@ $custom-colors: (
   "bright-blue": $secondary,
   "moderate-cyan": $moderate-cyan,
   "light-grayish-blue": $light-grayish-blue,
-  "light-gray": $light-gray,
+  "light-gray": $light,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1920px
 );
 
 @import "./node_modules/bootstrap/scss/_functions";
@@ -45,10 +53,20 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
-button {
-  font-family: "Raleway", sans-serif;
+.navbar {
+    font-family: "Raleway", sans-serif;
+}
+
+.section-one {
+    input[type='email']::placeholder {
+        font-size: 0.8rem;
+    }
+    .get-started-button{
+        font-family: "Raleway", sans-serif;
+    }
 }
 
 .section-two {
@@ -76,19 +94,35 @@ button {
   .card-body {
       .blockquote {
           font-size: 0.8rem;
+          letter-spacing: 0.8px;
       }
   }
 
   .testimonial-user {
       img {
           width: 35px;
+          margin-bottom: 0.2rem;
       }
       .testimonial-user-details {
-          h3,p {
-              font-size: 0.8rem;
+          h3 {
+              letter-spacing: 1.5px;
+              font-size: 0.9rem;
+          }
+
+          p {
+              font-size: 0.7rem;
           }
       }
   }
+}
+
+.section-three {
+    input[type='email']::placeholder {
+        font-size: 0.8rem;
+    }
+    .get-started-free-button{
+        font-family: "Raleway", sans-serif;
+    }
 }
 
 footer {
@@ -113,9 +147,30 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+    .section-one {
+        .heading {
+          font-family: "Raleway", sans-serif;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .section-two {
+        .heading {
+            font-size: 2.5rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .section-two {
         background-image: url("./images/bg-curve-desktop.svg");
+        img {
+            max-width: 80%;
+            height: auto;
+        }
     }
     
 }
