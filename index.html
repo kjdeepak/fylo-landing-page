@@ -14,7 +14,8 @@
 </head>
 
 <body class="text-primary">
-  <nav class="navbar navbar-expand navbar-light bg-transparent mb-5 mt-3 mt-md-5 px-md-5">
+  <nav role="navigation" aria-label="navigation"
+    class="navbar navbar-expand navbar-light bg-transparent mb-5 mt-3 mt-md-5 px-md-5">
     <div class="container flex-wrap">
       <a class="navbar-brand" href="#">
         <img src="./images/logo.svg" alt="brand logo">
@@ -33,8 +34,8 @@
     </div>
   </nav>
 
-  <div class="container-xxl">
-    <section class="row pb-5 section-one align-items-md-center px-md-5">
+  <main role="main" aria-label="main content" class="container-xxl">
+    <section role="section" aria-label="section" class="row pb-5 section-one align-items-md-center px-md-5">
       <div class="col-12 col-md-6 order-md-2 mb-5">
         <img src="./images/illustration-1.svg" alt="illustration one" class="img-fluid" />
       </div>
@@ -58,7 +59,7 @@
     </section>
 
 
-    <section class="row section-two align-items-md-center py-5 px-md-5">
+    <section role="section" aria-label="section" class="row section-two align-items-md-center py-5 px-md-5">
       <div class="col-12 col-md-6 order-md-2 mb-5 mb-md-0">
         <img src="./images/illustration-2.svg" alt="illustration one" class="img-fluid" />
       </div>
@@ -94,7 +95,8 @@
       </div>
     </section>
 
-    <section class="row section-three align-items-md-center bg-desaturated-blue text-light-grayish-blue py-5 px-md-5">
+    <section role="section" aria-label="section"
+      class="row section-three align-items-md-center bg-desaturated-blue text-light-grayish-blue py-5 px-md-5">
       <div class="col-10 offset-1 col-md-6 offset-md-0 mb-4 text-center text-md-start">
         <h1 class="h3 mb-4">Get early access today</h1>
         <p class="col-md-10 col-lg-8 lead fs-6">It only takes a minute to sign up and our free starter tier is extremely
@@ -115,7 +117,7 @@
       </div>
     </section>
 
-    <footer class="row bg-primary text-light-grayish-blue pt-5 px-md-5">
+    <footer role="footer" aria-label="footer" class="row bg-primary text-light-grayish-blue pt-5 px-md-5">
       <div class="col-12 mb-4 nav-item">
         <img src="./images/logo.svg" alt="brand logo" class="nav-link footer-logo" />
       </div>
@@ -128,7 +130,7 @@
       </ul>
       <ul class="col-12 col-md-3 list-unstyled nav-item">
         <li class="nav-link text-light-grayish-blue"><span role="button">About Us</span></li>
-        <li class="nav-link text-light-grayish-blue"><span role="button"> Jobs</span></li>
+        <li class="nav-link text-light-grayish-blue"><span role="button">Jobs</span></li>
         <li class="nav-link text-light-grayish-blue"><span role="button">Press</span></li>
         <li class="nav-link text-light-grayish-blue"><span role="button">Blog</span></li>
       </ul>
@@ -138,12 +140,12 @@
         <li class="nav-link text-light-grayish-blue"><span role="button">Privacy</span></li>
       </ul>
       <ul class="col-12 col-md-3 list-unstyled nav-item d-flex justify-content-center justify-content-md-start">
-        <li class="nav-link text-light-grayish-blue"><span role="button" class="icon-container"><i
-              class="bi bi-facebook"></i></span></li>
-        <li class="nav-link text-light-grayish-blue"><span role="button" class="icon-container"><i
-              class="bi bi-twitter"></i></span></li>
-        <li class="nav-link text-light-grayish-blue"><span role="button" class="icon-container"><i
-              class="bi bi-instagram"></i></span></li>
+        <li class="nav-link text-light-grayish-blue"><span role="button" aria-label="facebook icon"
+            class="icon-container"><i class="bi bi-facebook"></i></span></li>
+        <li class="nav-link text-light-grayish-blue"><span role="button" aria-label="twitter icon"
+            class="icon-container"><i class="bi bi-twitter"></i></span></li>
+        <li class="nav-link text-light-grayish-blue"><span role="button" aria-label="instagram icon"
+            class="icon-container"><i class="bi bi-instagram"></i></span></li>
       </ul>
       <div class="row mt-5">
         <div class="col">
@@ -154,7 +156,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  </main>
 </body>
 
 </html>
