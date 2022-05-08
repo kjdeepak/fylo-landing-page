@@ -1,14 +1,18 @@
 $primary: hsl(243, 87%, 12%);
 $secondary: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
 
 // Create your own map
 $custom-colors: (
-  "very-dark-blue": hsl(243, 87%, 12%),
-  "desaturated-blue": hsl(238, 22%, 44%),
-  "bright-blue": hsl(224, 93%, 58%),
-  "moderate-cyan": hsl(170, 45%, 43%),
-  "light-grayish-blue": hsl(240, 75%, 98%),
-  "light-gray": hsl(0, 0%, 75%),
+  "very-dark-blue": $primary,
+  "desaturated-blue": $desaturated-blue,
+  "bright-blue": $secondary,
+  "moderate-cyan": $moderate-cyan,
+  "light-grayish-blue": $light-grayish-blue,
+  "light-gray": $light-gray,
 );
 
 @import "./node_modules/bootstrap/scss/_functions";
@@ -44,9 +48,48 @@ body {
 }
 
 button {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
+.section-two {
+  background: url("./images/bg-curve-mobile.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .anchor-link-container {
+    a {
+      position: relative;
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 30px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background-color: $moderate-cyan;
+    }
+  }
+
+  .card-body {
+      .blockquote {
+          font-size: 0.8rem;
+      }
+  }
+
+  .testimonial-user {
+      img {
+          width: 35px;
+      }
+      .testimonial-user-details {
+          h3,p {
+              font-size: 0.8rem;
+          }
+      }
+  }
+}
 
 .attribution {
   font-size: 11px;

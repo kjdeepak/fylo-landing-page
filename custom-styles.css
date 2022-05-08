@@ -12717,6 +12717,40 @@ button {
   font-family: "Raleway", sans-serif;
 }
 
+.section-two {
+  background: url("./images/bg-curve-mobile.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-two .anchor-link-container a {
+  position: relative;
+}
+
+.section-two .anchor-link-container a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #3c9f8f;
+}
+
+.section-two .card-body .blockquote {
+  font-size: 0.8rem;
+}
+
+.section-two .testimonial-user img {
+  width: 35px;
+}
+
+.section-two .testimonial-user .testimonial-user-details h3, .section-two .testimonial-user .testimonial-user-details .h3, .section-two .testimonial-user .testimonial-user-details p {
+  font-size: 0.8rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
