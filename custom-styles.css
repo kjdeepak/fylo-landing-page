@@ -12718,24 +12718,28 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.section-one input[type='email']::-webkit-input-placeholder {
+.section-one input[type="email"]::-webkit-input-placeholder {
   font-size: 0.8rem;
 }
 
-.section-one input[type='email']:-ms-input-placeholder {
+.section-one input[type="email"]:-ms-input-placeholder {
   font-size: 0.8rem;
 }
 
-.section-one input[type='email']::-ms-input-placeholder {
+.section-one input[type="email"]::-ms-input-placeholder {
   font-size: 0.8rem;
 }
 
-.section-one input[type='email']::placeholder {
+.section-one input[type="email"]::placeholder {
   font-size: 0.8rem;
 }
 
 .section-one .get-started-button {
   font-family: "Raleway", sans-serif;
+}
+
+.section-one .get-started-button:hover {
+  opacity: 0.7;
 }
 
 .section-two {
@@ -12746,6 +12750,10 @@ body {
 
 .section-two .anchor-link-container a {
   position: relative;
+}
+
+.section-two .anchor-link-container a:hover {
+  opacity: 0.7;
 }
 
 .section-two .anchor-link-container a:after {
@@ -12779,24 +12787,28 @@ body {
   font-size: 0.7rem;
 }
 
-.section-three input[type='email']::-webkit-input-placeholder {
+.section-three input[type="email"]::-webkit-input-placeholder {
   font-size: 0.8rem;
 }
 
-.section-three input[type='email']:-ms-input-placeholder {
+.section-three input[type="email"]:-ms-input-placeholder {
   font-size: 0.8rem;
 }
 
-.section-three input[type='email']::-ms-input-placeholder {
+.section-three input[type="email"]::-ms-input-placeholder {
   font-size: 0.8rem;
 }
 
-.section-three input[type='email']::placeholder {
+.section-three input[type="email"]::placeholder {
   font-size: 0.8rem;
 }
 
 .section-three .get-started-free-button {
   font-family: "Raleway", sans-serif;
+}
+
+.section-three .get-started-free-button:hover {
+  opacity: 0.7;
 }
 
 footer .footer-logo {
