@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./custom-styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
@@ -104,36 +105,39 @@
       </div>
     </section>
 
-    <footer>
-      <div class="row">
-        <div class="col">
-          <ul>
-            <li>Phone: +1-543-123-4567</li>
-            <li>example@fylo.com
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <li>About Us</li>
-          <li> Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
-        </div>
-        <div class="col">
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </div>
-        <div class="col"></div>
+    <footer class="row bg-primary text-light-grayish-blue pt-5 px-4">
+      <div class="col-12 mb-4 nav-item">
+        <img src="./images/logo.svg" alt="brand logo" class="nav-link footer-logo" />
       </div>
-      <div class="row">
+        <ul class="col-12 col-md-3 list-unstyled nav-item">
+            <li class="nav-link text-light-grayish-blue"><span role="button">Phone: +1-543-123-4567</span></li>
+            <li class="nav-link text-light-grayish-blue"><span role="button">example@fylo.com
+            </span></li>
+        </ul>
+        <ul class="col-12 col-md-3 list-unstyled nav-item">
+          <li class="nav-link text-light-grayish-blue"><span role="button">About Us</span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button"> Jobs</span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button">Press</span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button">Blog</span></li>
+        </ul>
+        <ul class="col-12 col-md-3 list-unstyled nav-item">
+          <li class="nav-link text-light-grayish-blue"><span role="button">Contact Us</span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button">Terms</span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button">Privacy</span></li>
+        </ul>
+        <ul class="col-12 col-md-3 list-unstyled nav-item d-flex justify-content-center justify-content-md-start">
+          <li class="nav-link text-light-grayish-blue"><span role="button"><i class="bi bi-facebook"></i></span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button"><i class="bi bi-twitter"></i></span></li>
+          <li class="nav-link text-light-grayish-blue"><span role="button"><i class="bi bi-instagram"></i></span></li>
+        </ul>
+      <div class="row mt-5">
         <div class="col">
           <p class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="https://github.com/kjdeepak" target="_blank">kjdeepak4work@gmail.com</a>.
           </p>
         </div>
-      </div>
+        </div>
     </footer>
   </div>
 </body>
