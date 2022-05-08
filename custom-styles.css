@@ -12770,4 +12770,10 @@ footer .footer-logo {
     width: 100px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .section-two {
+    background-image: url("./images/bg-curve-desktop.svg");
+  }
+}
 /*# sourceMappingURL=custom-styles.css.map */
